@@ -11,6 +11,8 @@ import org.hibernate.query.Query;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.Root;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class UserDaoHibernateImpl implements UserDao {
@@ -91,7 +93,7 @@ public class UserDaoHibernateImpl implements UserDao {
         } catch(Exception e){
             e.printStackTrace();
         }
-        return null;
+        return Collections.emptyList();
     }
 
     @Override
